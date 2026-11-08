@@ -4,6 +4,8 @@
 
 *27 Sept 2026, 2143 hrs*
 
+Standard alpha release.
+
 Alura part 2, SProperties work again, crash reporter.
 
 - SProperty
