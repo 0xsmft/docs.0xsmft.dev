@@ -19,6 +19,7 @@ Saturn supports the following platforms listed below:
 !!! info "Please read the following information"
 
     Windows ARM builds are only available on Windows 11.
+    
     Linux builds have only been officially tested on Arch Linux (btw).
 
 For information on building the engine please visit the [README](https://github.com/0xsmft/Saturn-Engine/blob/vulkan/README.md).
