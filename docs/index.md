@@ -13,7 +13,7 @@ Saturn supports the following platforms listed below:
 | Platform | Supported | Architecture | Build Status | Stability |
 | -------- | --------- | ------------ | ------------ | --------- |
 | Windows 10+ | ✅ | x86_64 & AArch64 |     <a href="https://github.com/BEASTSM96/Saturn-Engine/actions/workflows/Windows.yml"><img alt="Repo Size" src="https://github.com/BEASTSM96/Saturn-Engine/actions/workflows/Windows.yml/badge.svg"></a> | Very stable
-| Linux | 🕗 *[Progress](https://trello.com/c/o43wueQO/9-preliminary-linux-support)* | x86_64 | No CI yet. | N/A
+| Linux | ✅ | x86_64 | No CI yet. | Stable
 | macOS 15+ (Sequoia) | ✅ | AArch64 (Apple M-Series) | <a href="https://github.com/BEASTSM96/Saturn-Engine/actions/workflows/MacOS-Arm.yml"><img alt="macOS CI" src="https://github.com/BEASTSM96/Saturn-Engine/actions/workflows/MacOS-Arm.yml/badge.svg"></a> | Unstable
 
 !!! info "Please read the following information"
