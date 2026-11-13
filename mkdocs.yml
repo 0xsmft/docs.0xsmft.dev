@@ -1,4 +1,4 @@
-site_name: 0xsmft
+site_name: Saturn Engine
 repo_url: https://github.com/0xsmft/Saturn-Engine
 repo_name: 0xsmft/Saturn-Engine
 # The website version has two different versions, the numerical version i.e. 1.x.x is the documentation version
@@ -24,7 +24,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/0xsmft
     - icon: fontawesome/brands/github
-      link: https://github.com/docs.0xsmft.dev
+      link: https://github.com/0xsmft/docs.0xsmft.dev
   generator: false
 plugins:
   - awesome-nav
