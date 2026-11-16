@@ -1,11 +1,12 @@
 # Saturn Engine
 
-Saturn is primarily an early-stage cross-platform 3D game engine.
+Saturn is a free, open-source cross-platform 3D game engine.
 
 <p>
     <a href="https://github.com/BEASTSM96/Saturn-Engine/blob/vulkan/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg"></a>
     <a href="https://img.shields.io/github/repo-size/BEASTSM96/Saturn-Engine"><img alt="Repo Size" src="https://img.shields.io/github/repo-size/BEASTSM96/Saturn-Engine"></a>
     <a href="https://trello.com/b/baqP3fvB/saturn-engine"><img alt="Trello" src="https://img.shields.io/badge/Trello-saturn--engine-blue"></a>
+    <a href="https://github.com/0xsmft/Saturn-Engine"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-Saturn--Engine-pink"></a>
 </p>
 
 Saturn supports the following platforms listed below:
