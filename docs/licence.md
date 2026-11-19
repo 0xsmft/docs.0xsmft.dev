@@ -1,8 +1,8 @@
-# Saturn-Engine licence
+# Licence
 
 MIT License
 
-Copyright (c) 2020 - 2026 0xsmft https://0xsmft.dev
+Copyright (c) 2020 - 2026 0xsmft [https://0xsmft.dev](https://0xsmft.dev)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
