@@ -86,7 +86,7 @@ If it's a global variable (first class):
 
 - Must use `g_` prefix (followed by second class prefixes) with `PascalCase` e.g. `g_Int` or with second class prefix `g_pIntPtr`
 
-If it's a global constant variable (first class):
+If it's a macro that is now a constant variable (first class):
 
 - Must use `SAT_` prefix with `SCREAMING_CASE` e.g. `SAT_PI`
 
@@ -94,4 +94,24 @@ If a variables prefix would have multiple first class prefixes then take the fir
 
 For example:
 
-`static constexpr uint32_t MyVariable = 32u` would become `s_MyVariable` because `static` is more important to know than the `constexpr` specifier.
+`static constexpr uint32_t MyVariable = 32u` would become `s_MyVariable` instead of `kMyVariable` because `static` is more important to know than the `constexpr` specifier.
+
+## Typedef/Using
+
+`typdef` and `using` follow the same naming conventions as the classes.
+
+However, the following rules only apply for typedef/using:
+
+If the underlying type can change depending on the build config:
+
+- Must use `F` prefix and have `Dependent` in it's name e.g. `FDependentIStream`.
+
+## Templates
+
+Generally `typename` specifiers should be called `Ty`, avoid using `T`.
+
+If a more suitable name exists than `Ty` use that suitable name with the `T` prefix e.g. `TRefType` instead of just `Ty`.
+
+## Macro
+
+A macro should always be in `SCREAMING_CASE` with the `SAT_` prefix.
