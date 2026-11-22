@@ -1,0 +1,219 @@
+/* ---------- Palette ---------- */
+:root {
+  --saturn-radius: 0.5rem;
+  --saturn-radius-sm: 0.3rem;
+  --saturn-pink: #e91e63; /* 0xsmft.dev logo colour */
+}
+
+/* Link colours */
+[data-md-color-scheme="default"][data-md-color-primary] {
+  --md-typeset-a-color: #d84315;
+  --saturn-border: #0000001a;
+  --saturn-surface: #fafafa;
+}
+
+/* Dark mode (although I turned it off... sorry to any dark mode users) */
+[data-md-color-scheme="slate"][data-md-color-primary] {
+  --md-typeset-a-color: #ff8a65;
+  --saturn-border: hsla(var(--md-hue), 15%, 90%, 0.1);
+  --saturn-surface: hsla(var(--md-hue), 15%, 16%, 1);
+}
+
+/* ---------- Layout ---------- */
+.md-grid {
+  max-width: 68rem;
+}
+
+/* ---------- Header & tabs ---------- */
+.md-header__button.md-logo img {
+  height: 1.5rem;
+}
+
+.md-header__topic:first-child {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-tabs__link {
+  font-weight: 500;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: var(--md-typeset-a-color);
+}
+
+/* ---------- Sidebar navigation ---------- */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link,
+  .md-nav__item--section > .md-nav__link {
+    font-weight: 700;
+    color: var(--md-default-fg-color);
+  }
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+}
+
+/* ---------- Typography ---------- */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--md-default-fg-color);
+  margin-bottom: 0.9em;
+}
+
+.md-typeset h2 {
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.3em;
+  border-bottom: 0.05rem solid var(--saturn-border);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+}
+
+.md-typeset a {
+  text-underline-offset: 0.2em;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .headerlink,
+.md-typeset .headerlink:hover,
+.md-typeset .md-button,
+.md-typeset .md-button:hover,
+.md-typeset .grid.cards a:hover {
+  text-decoration: none;
+}
+
+.md-path {
+  font-size: 0.65rem;
+}
+
+/* ---------- Code ---------- */
+.md-typeset code {
+  border-radius: var(--saturn-radius-sm);
+}
+
+.md-typeset :not(pre) > code {
+  border: 0.05rem solid var(--saturn-border);
+}
+
+.md-typeset pre > code {
+  border: 0.05rem solid var(--saturn-border);
+  border-radius: var(--saturn-radius);
+  padding: 0.9em 1.2em;
+}
+
+.md-typeset .highlight .hll {
+  border-radius: 0;
+}
+
+/* On phones Material makes top-level code blocks full-bleed */
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner > pre > code,
+  .md-content__inner > .highlight > pre > code {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+/* ---------- Admonitions ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0.05rem;
+  border-radius: var(--saturn-radius);
+  box-shadow: none;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  border-top-left-radius: calc(var(--saturn-radius) - 0.05rem);
+  border-top-right-radius: calc(var(--saturn-radius) - 0.05rem);
+}
+
+/* "!!! name" — naming convention callouts */
+.md-typeset .admonition.name,
+.md-typeset details.name {
+  border-color: var(--saturn-pink);
+}
+
+.md-typeset .name > .admonition-title,
+.md-typeset .name > summary {
+  background-color: #e91e631a;
+}
+
+.md-typeset .name > .admonition-title::before,
+.md-typeset .name > summary::before {
+  background-color: var(--saturn-pink);
+  -webkit-mask-image: var(--md-admonition-icon--name);
+          mask-image: var(--md-admonition-icon--name);
+}
+
+/* ---------- Tables ---------- */
+.md-typeset table:not([class]) {
+  border: 0.05rem solid var(--saturn-border);
+  border-radius: var(--saturn-radius);
+  overflow: hidden;
+  font-size: 0.68rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--saturn-surface);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td {
+  border-top-color: var(--saturn-border);
+}
+
+/* ---------- Grid cards ---------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border: 0.05rem solid var(--saturn-border);
+  border-radius: var(--saturn-radius);
+  background-color: var(--saturn-surface);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid > .card:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0.4rem 1.2rem #00000014;
+  transform: translateY(-0.1rem);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  border-color: var(--saturn-border);
+}
+
+.md-typeset .grid.cards .lg {
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .grid.cards p:has(> a) {
+  margin: 0.3em 0;
+}
+
+/* ---------- Buttons (colours come from the Material palette) ---------- */
+.md-typeset .md-button {
+  border-radius: var(--saturn-radius-sm);
+  font-weight: 600;
+  padding: 0.5em 1.4em;
+}
+
+/* ---------- Home page ---------- */
+.md-typeset .saturn-lead {
+  font-size: 1.15em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .saturn-badges img {
+  margin-right: 0.15rem;
+}

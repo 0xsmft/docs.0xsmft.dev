@@ -1,0 +1,16 @@
+nav:
+  - Home:
+      - index.md
+      - maths.md
+      - versions.md
+      - releasenotes.md
+      - licence.md
+  - Alura
+  - Asset
+  - Foundation
+  - Game Framework
+  - Physics
+  - Renderer
+  - Scene
+  - Tools
+  - Contributing
